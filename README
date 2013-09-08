@@ -1,0 +1,29 @@
+FreeWifi tools
+==============
+
+These tools allow to easy and automatize FreeWifi registering.
+As a reminder, FreeWifi is an open wifi network for consumers
+of the Free.fr internet provider. It is a captive protal
+available on any FreeBox.
+
+Content
+-------
+
+freewifi-register.sh
+~~~~~~~~~~~~~~~~~~~~
+This tool allow to script the registering to the network,
+once the WiFi association is done.
+The token are stored in /etc/freewifi.conf.
+
+freewifi-dispatcher.sh
+~~~~~~~~~~~~~~~~~~~~~~
+This tool is a dispatcher script for NetworkManager.
+It should be located in /etc/NetworkManager/dispatcher.d/.
+
+Usage
+-----
+
+Use freewifi-register.sh if you need to register FreeWifi.
+
+Use freewifi-dispatcher.sh if you already use NetworkManager.
+FreeWifi registering will be automatic.
